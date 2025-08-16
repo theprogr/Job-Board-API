@@ -18,7 +18,7 @@ class Job(BaseModel):
 
 while True:
     try:
-        conn = psycopg.connect(host="localhost", dbname="FastApi", user="postgres", password="23042008", row_factory=dict_row)
+        conn = psycopg.connect(host="fake", dbname="fake", user="fake", password="fake", row_factory=dict_row)
         cursor = conn.cursor()
         print("Database connection was successfull!")
         break
